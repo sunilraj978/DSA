@@ -105,8 +105,8 @@ class LinkedList{
 
     reverse(){
         let temp = this.head
-        this.tail = this.head
         this.head = this.tail
+        this.tail = temp
         let next = temp
         let prev = null
 
